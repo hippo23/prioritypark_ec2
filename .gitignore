@@ -5,3 +5,5 @@ config.toml
 authenticator.log
 cert.crt
 key.key
+__pycache__
+venv
