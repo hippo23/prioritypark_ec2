@@ -1,0 +1,7 @@
+credentials*.txt
+*.p12
+*.pem
+config.toml
+authenticator.log
+cert.crt
+key.key
