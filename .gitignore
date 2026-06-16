@@ -3,7 +3,7 @@ credentials*.txt
 *.pem
 config.toml
 authenticator.log
-cert.crt
+cert.pem
 key.key
 __pycache__
 venv

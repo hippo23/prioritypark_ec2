@@ -1,6 +1,3 @@
-# this is what querying the server looks like (dapat)
-# but it only works locally
-
 import requests
 
 log_url = "http://localhost:8000/log"

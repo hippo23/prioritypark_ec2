@@ -8,6 +8,7 @@ from functools import partial
 import asyncio
 import requests
 import traceback
+import uvicorn
 
 class VerifyRequest(BaseModel):
     uid: str
@@ -104,3 +105,10 @@ async def message(payload: LogRequest, x_api_key: str = Header(None)):
         print("\033[31mERROR\033[0m: ", str(e))
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
+
+if __name__ == 'main':
+    uvicorn.run(
+        "main:app",
+        host="0.0.0.0",
+        port=443,
+    )
